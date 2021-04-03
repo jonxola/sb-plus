@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="popup.css">
+    <script defer src="popup.js"></script>
+</head>
+<body>
+    <header class="block">
+        <img class="header__logo" src="icons/icon128.png" alt="Schedule Builder + logo">
+        <svg class="close" viewBox="0 0 24 24" width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+    </header>
+
+    <p class="no-course hidden">Please visit a
+        <a href="https://schedulebuilder.umn.edu/" target="_blank">UMN Schedule Builder</a>
+        course page to use Schedule Builder +.
+    </p>
+
+    <div class="course hidden">
+        <p class="course__name block block--header"></p>
+
+        <a class="course__gopher-grades block" href="#" target="_blank">
+            <img class="dot-img" src="icons/gophergrades.png" alt="gopher grades logo">
+            Gopher Grades
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
+            </svg>
+        </a>
+
+        <a class="course__subreddit block" href="#" target="_blank">
+            <img class="dot-img" src="icons/reddit.png" alt="reddit logo">
+            UMN Subreddit (r/uofmn)
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
+            </svg>
+        </a>
+
+        <p class="block block--header">Instructors</p>
+        <div class="course__instructors"></div>
+    </div>
+</body>
+</html>

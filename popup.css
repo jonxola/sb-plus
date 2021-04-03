@@ -1,0 +1,114 @@
+:root {
+    --umn-maroon: #790119;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 18rem;
+    font-family: 'Open Sans', system-ui, sans-serif;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.no-course {
+    padding: 1.25rem 1rem;
+}
+
+.no-course a {
+    color: var(--umn-maroon);
+}
+
+svg {
+    fill: none;
+    stroke: hsl(0, 0%, 10%);
+    stroke-width: 1;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.block {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    border-bottom: 1px solid hsl(0, 0%, 90%);
+}
+
+.block--header {
+    font-size: 1.25em;
+    font-weight: 600;
+    padding: 0.75rem 1rem;
+}
+
+.dot-img {
+    width: 1.5em;
+    border-radius: 50%;
+    margin-right: 0.75em;
+}
+
+header {
+    padding: 1.25rem 1rem;
+    font-weight: 600;
+}
+
+.header__logo {
+    width: 2em;
+    border-radius: 3px;
+    margin-right: 1em;
+}
+
+.header__name {
+    font-size: 1.2em;
+}
+
+.close {
+    width: 1.5em;
+    margin-left: auto;
+}
+
+.close:hover {
+    cursor: pointer;
+    stroke: var(--umn-maroon);
+    stroke-width: 2;
+    transition: stroke 0.2s, stroke-width 0.2s;
+}
+
+.course {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.course a {
+    display: flex;
+    flex-flow: row nowrap;
+    padding: 1.25rem 1rem;
+    color: black;
+    text-decoration: none;
+}
+
+.course a svg {
+    margin-left: auto;
+    width: 1.25em;
+}
+
+.course a:hover {
+    border-left: 4px solid var(--umn-maroon);
+    transition: border 0.1s;
+}
+
+.course a:hover svg {
+    stroke: var(--umn-maroon);
+    stroke-width: 2;
+    transition: stroke 0.2s, stroke-width 0.2s;
+}
+
+.course__instructors {
+    display: flex;
+    flex-flow: column nowrap;
+}

@@ -1,0 +1,16 @@
+{
+    "manifest_version": 3,
+    "name": "Schedule Builder +",
+    "version": "1.0.0",
+    "description": "Easy access to Gopher Grades, Rate my Professors, and r/uofmn while planning your next semester at the U.",
+    "permissions": ["activeTab", "scripting"],
+    "action": {
+        "default_popup": "popup.html"
+    },
+    "icons": {
+        "16": "icons/icon16.png",
+        "32": "icons/icon32.png",
+        "48": "icons/icon48.png",
+        "128": "icons/icon128.png"
+    }
+}
